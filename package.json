@@ -1,0 +1,19 @@
+{
+  "name": "stratostake",
+  "version": "1.0.0",
+  "description": "Chain Abstraction - Cross-chain Liquidity Staking between EVM and Solana as LST/LRT Aggregator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyYap/StratoStake.git"
+  },
+  "author": "0xSkyyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkyYap/StratoStake/issues"
+  },
+  "homepage": "https://github.com/SkyYap/StratoStake#readme"
+}
