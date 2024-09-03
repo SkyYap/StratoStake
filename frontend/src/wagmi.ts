@@ -1,7 +1,7 @@
 import { http, cookieStorage, createConfig, createStorage } from 'wagmi'
 import { mainnet, sepolia, rootstockTestnet, hederaTestnet, morphSepolia } from 'wagmi/chains'
 import { coinbaseWallet, injected } from 'wagmi/connectors'
-import Web3AuthConnectorInstance from "./Web3AuthConnectorInstance";
+import Web3AuthConnectorInstance from "./Web3AuthConnectorInstance"
 
 export function getConfig() {
   return createConfig({
