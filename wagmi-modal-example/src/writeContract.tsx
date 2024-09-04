@@ -2,7 +2,6 @@ import { FormEvent, } from 'react'
 import { useWaitForTransactionReceipt, useWriteContract, BaseError } from 'wagmi';
 import { parseAbi } from 'viem';
 
-
 export function WriteContract() {
   const { data: hash, error, isPending, writeContract } = useWriteContract()
 

@@ -48,7 +48,7 @@ function Profile() {
         <button className="card" onClick={disconnect as any}>
           Disconnect
         </button>
-        <SendTransaction />
+        {/* <SendTransaction /> */}
         <Balance />
         <WriteContract />
         <SwitchChain />

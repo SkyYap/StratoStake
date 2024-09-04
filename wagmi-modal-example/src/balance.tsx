@@ -1,4 +1,5 @@
-import { useAccount, useBalance, useSignTypedData } from "wagmi";
+import { useAccount, useBalance, useSignTypedData } from "wagmi"
+import { formatUnits } from 'viem'
 
 export function Balance() {
   const { address } = useAccount();
@@ -13,8 +14,10 @@ export function Balance() {
     <div>
       <h2>Balance</h2>
 
-      <div>Balance (Default Chain): {default_?.formatted}</div>
-      <div>Balance (Account Chain): {account_?.formatted}</div>
+      {/* <div>Balance (Default Chain): {default_?.formatted}</div>
+      <div>Balance (Account Chain): {account_?.formatted}</div> */}
+      <div>Balance (Default Chain): {formatUnits(default_?.value ?? 0n, default_?.decimals ?? 18)}</div>
+      <div>Balance (Account Chain): {formatUnits(account_?.value ?? 0n, account_?.decimals ?? 18)}</div>
 
       <br />
       <button
