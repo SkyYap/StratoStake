@@ -2,8 +2,11 @@
   "name": "wagmi-modal-example",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
+    "@lit-protocol/constants": "^6.4.10",
     "@lit-protocol/lit-node-client": "^6.4.10",
+    "@lit-protocol/sdk-nodejs": "^1.1.250",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -18,6 +21,7 @@
     "@web3auth/openlogin-adapter": "^8.12.2",
     "@web3auth/wallet-services-plugin": "^8.12.3",
     "@web3auth/web3auth-wagmi-connector": "^6.0.0",
+    "ethers": "^5.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.3.3",
@@ -38,7 +42,8 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "run:generateWrappedKey": "ts-node src/lit-protocol/generateWrappedKey.ts"
   },
   "eslintConfig": {
     "extends": [

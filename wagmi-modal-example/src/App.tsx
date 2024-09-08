@@ -4,12 +4,12 @@ import { coinbaseWallet, walletConnect } from "wagmi/connectors";
 import { sepolia, mainnet, polygon, rootstockTestnet, hederaTestnet, morphSepolia } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query' 
 
-import { SendTransaction } from "./sendTransaction";
-import { SwitchChain } from "./switchNetwork";
-import { Balance } from "./balance";
-import { WriteContract } from "./writeContract";
+import { SendTransaction } from "./contract-interaction/sendTransaction";
+import { SwitchChain } from "./contract-interaction/switchNetwork";
+import { Balance } from "./contract-interaction/balance";
+import { WriteContract } from "./contract-interaction/writeContract";
 
-import Web3AuthConnectorInstance from "./Web3AuthConnectorInstance";
+import Web3AuthConnectorInstance from "./contract-interaction/Web3AuthConnectorInstance";
 import "./App.css";
 
 const queryClient = new QueryClient() 

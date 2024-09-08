@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/SkyYap/StratoStake/issues"
   },
-  "homepage": "https://github.com/SkyYap/StratoStake#readme"
+  "homepage": "https://github.com/SkyYap/StratoStake#readme",
+  "devDependencies": {
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@lit-protocol/contracts-sdk": "^6.4.10",
+    "@lit-protocol/lit-auth-client": "^6.4.10",
+    "@lit-protocol/wrapped-keys": "^6.4.10",
+    "@openzeppelin/contracts": "^5.0.2",
+    "ethers": "^5.7.2"
+  }
 }
